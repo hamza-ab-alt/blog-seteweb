@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <title>details page</title>
+    <title>details page </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
-    <header class="relative h-96 bg-cover bg-center"
-            style="background-image: url(images/yellowriver.jpg);"
-            >
-            <div class="absolute bottom-0 ml-[20px] mb-[20px]">
-
-                <h4 class="text-white font-inika font-bold">Journey in Yellow River</h4>
-                <div class="flex mb-[15px] gap-[7px]">
-                    <p class="text-white font-inika">by Ian Jacobson</p>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="white" d="M12 2a9 9 0 0 1 9 9c0 3.074-1.676 5.59-3.442 7.395a20.4 20.4 0 0 1-2.876 2.416l-.426.29l-.2.133l-.377.24l-.336.205l-.416.242a1.87 1.87 0 0 1-1.854 0l-.416-.242l-.52-.32l-.192-.125l-.41-.273a20.6 20.6 0 0 1-3.093-2.566C4.676 16.589 3 14.074 3 11a9 9 0 0 1 9-9m0 2a7 7 0 0 0-7 7c0 2.322 1.272 4.36 2.871 5.996a18 18 0 0 0 2.222 1.91l.458.326q.222.155.427.288l.39.25l.343.209l.289.169l.455-.269l.367-.23q.293-.186.627-.417l.458-.326a18 18 0 0 0 2.222-1.91C17.728 15.361 19 13.322 19 11a7 7 0 0 0-7-7m0 3a4 4 0 1 1 0 8a4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/></g></svg>
-                    
-                    <p class="text-white font-inika">China</p>
-
-                </div>
-
-                <div class="flex">
-
-                    <div class="flex gap-[5px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m.5-13H11v6l5.2 3.2l.8-1.3l-4.5-2.7z"/></svg>
-                        <p class="text-white font-inika">15 min to read</p>
-    
+    <main>
+        <section class="w-full">
+            <div class="relative h-[300px]  ">
+                <h1 class="absolute mt-56 text-white font-bold mx-7">Journey IN yellow Revir</h1>
+                <p class="absolute mt-60 mx-8  text-white ">by lucka Ait modrich <span><i
+                            class="fa-solid fa-location-dot">
+                        </i> China</span>
+                    </p>
+                <div class="absolute pt-1 mt-64 w-full text-white flex  justify-between">
+                    <div class="ml-8">
+                        <i class="fa-regular fa-clock"></i>15 min
                     </div>
-    
-                    <div class="flex ml-[170px]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><path d="M21.544 11.045c.304.426.456.64.456.955c0 .316-.152.529-.456.955C20.178 14.871 16.689 19 12 19c-4.69 0-8.178-4.13-9.544-6.045C2.152 12.529 2 12.315 2 12c0-.316.152-.529.456-.955C3.822 9.129 7.311 5 12 5c4.69 0 8.178 4.13 9.544 6.045Z"/><path d="M15 12a3 3 0 1 0-6 0a3 3 0 0 0 6 0Z"/></g></svg>
-                        <p class="text-white">12K</p>
-    
+                    <div class="mr-6">
+                        <i class="fa-solid fa-eye"></i>20k
                     </div>
                 </div>
+                <img src="/female-hiker-walking-wooden-bridge.jpg" alt="image" class="object-cover w-full h-full">
             </div>
-    </header>
+        </section>
+        <section>
+            <div class=" h-14 m-1 md:mx-[450px]">
+                <h2 class="text-black font-bold ml-2">Lets Begin To read</h2>
+                <hr class="border-2 mt-2 ml-6 w-[350px]">
+            </div>
+            <div class="w-[370px] shadow-lg ml-2 md:mx-[330px] md:w-[600px] rounded-xl text-center">
+                <p>A project blog is a weblog — a sort of Inter
+                    net diary — that charts the progress, statu
+                    s, and details of a certain defined
+                    endeavor. These blogs can come in many for
+                    ms. Some are designed as a way for corporate te
+                </p>
+            </div>
+            <div class="text-center">
+                Découvrez le charme du quartier populaire du Marais à Paris
+                à votre rythme avec cette visite audio libre. Promenez-vous dans des rues
+                pavées bordées de demeures du XVIIe siècle, de galeries d'art animées et
+                de cafés chics. Plongez dans le riche patrimoine juif et la
+                culture LGBTQ+ de la région, en explorant plusieurs points
+                d'intérêt. Grâce à des cartes hors ligne et des indications faciles à su
+                ivre, naviguez en toute transparence sans av
+                oir besoin de Wi-Fi ou de données. Cette visite flexib
+                Découvrez le charme du quartier populaire du Marais à Paris
+                à votre rythme avec cette visite audio libre. Promenez-vous dans des rues
+                pavées bordées de demeures du XVIIe siècle, de galeries d'art animées et
+                de cafés chics. Plongez dans le riche patrimoine juif et la
+                culture LGBTQ+ de la région, en explorant plusieurs points
+                d'intérêt. Grâce à des cartes hors ligne et des indications faciles à su
+                ivre, naviguez en toute transparence sans av
+                oir besoin de Wi-Fi ou de données. Cette visite flexib
+
+            </div>
+        </section>
+        <section>
+            <nav class="fixed bottom-0 w-full flex justify-around bg-white shadow-md py-2 md:hidden rounded-xl">
+                <div class="bg-green-600 rounded-xl w-10 text-center"> 
+                    <a href="index.html">
+                        <i
+                        class="fa-solid fa-house text-xl cursor-pointer"></i>
+                    </a>
+                    </div>
+                <i class="fa-regular fa-heart text-xl cursor-pointer"></i>
+                <i class="fa-solid fa-location-dot text-xl cursor-pointer"></i>
+                <a href="index2.html">
+                    <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+                </a>
+            </nav>
+        </section>
+    </main>
 </body>
+
 </html>
