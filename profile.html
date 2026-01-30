@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,16 +11,14 @@
     <title>Profile Page</title>
   </head>
 
-  <body class="bg-gray-100 flex justify-center">
-    <!-- Main container -->
-    <div
-      class="w-full max-w-sm min-h-screen bg-white flex flex-col relative shadow-lg"
+  <body class="w-screen bg-gray-100 flex flex-row-reverse">
+    <main
+      class=" flex-1 bg-white  relative shadow-lg md:pb-0 "
     >
-      <!-- Cover -->
       <div class="relative h-52 w-full">
         <img
-          src="full-shot-adventurous-couple-bivouacking.jpg"
-          class="w-full h-full object-cover"
+          src="full-shot-adventurous-couple-bivouacking.jpg" alt="image"
+          class="w-full h-full object-cover  "
         />
 
         <!-- Edit cover -->
@@ -33,7 +31,7 @@
       <div class="absolute top-36 left-6">
         <div class="relative">
           <img
-            src="full-shot-adventurous-man-bivouacking.jpg"
+            src="full-shot-adventurous-man-bivouacking.jpg" alt="image"
             class="w-24 h-24 rounded-full border-4 border-white object-cover bg-white"
           />
           <button
@@ -100,7 +98,7 @@
                     <p>by lan jacobson</p>
                 </div>
                 <div class="flex gap-4">
-                    <p class="text-gray-600"> <i class="fa-solid fa-location-crosshairs text-gray-600"></i> location</i></p>
+                    <p class="text-gray-600"> <i class="fa-solid fa-location-crosshairs text-gray-600"></i> location</p>
                     <p class="text-gray-600"><i class="fa-regular fa-clock text-gray-600"></i> time</p>
                     <p class="text-gray-600"> <i class="fa-solid fa-eye text-gray-600"></i> views </p>
                 </div>
@@ -115,30 +113,26 @@
           </button>
         </form>
       </div>
+    </main>
 
-      <nav class="bg-white border-t fixed bottom-0 w-full max-w-sm">
-        <div class="flex justify-around py-3 text-gray-500">
-          <a href="index.html" class="flex flex-col items-center">
-            <i class="fa-solid fa-house text-lg"></i>
-            <span class="text-xs">Home</span>
-          </a>
+       
+            <nav class="fixed bottom-0 w-full bg-white shadow-md py-2 flex justify-around
+         md:static md:w-1/6 md:h-screen md:flex-col md:items-center md:justify-between md:gap-6">
+                <div class="flex items-center justify-center bg-green-600 rounded-xl w-10 text-center "> <i
+                        class="fa-solid fa-house text-xl cursor-pointer "></i>
+                </div>
+                <div class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300 "> 
+                    <i class="fa-regular fa-heart text-xl cursor-pointer flex items-center justify-center"></i>
+                </div>
+                <div class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300">
+                    <i class="fa-solid fa-location-dot text-xl cursor-pointer"></i>
+                </div>
+                <div class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300">
+                      <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+                  
+                </div>
+            </nav>
 
-          <div class="flex flex-col items-center">
-            <i class="fa-solid fa-location-dot text-lg"></i>
-            <span class="text-xs">Location</span>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <i class="fa-regular fa-heart text-lg"></i>
-            <span class="text-xs">Wishlist</span>
-          </div>
-
-          <div class="flex flex-col items-center text-green-500">
-            <i class="fa-regular fa-user text-lg"></i>
-            <span class="text-xs">Profile</span>
-          </div>
-        </div>
-      </nav>
-    </div>
+   
   </body>
 </html>
