@@ -17,10 +17,10 @@
     >
       <form
         action="#"
-        class="border relative border-gray-200 rounded-2xl p-16 bg-white"
+        class="border relative border-gray-200 rounded-2xl p-16 bg-white "
       >
         <button
-          class="close-window absolute top-2 right-2 hover:bg-gray-100 duration-300 p-2 rounded-xl cursor-pointer text-green-400 text-4xl"
+          class="close-window absolute top-2 right-2 hover:bg-gray-100 duration-300 p-0 rounded-xl cursor-pointer text-green-400 text-4xl"
         >
           &times;
         </button>
@@ -34,7 +34,7 @@
           <input
             type="titre"
             id="titre"
-            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
             placeholder="entrez le titre"
             required
           />
@@ -48,7 +48,7 @@
           <input
             type="Destination"
             id="Destination"
-            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
             placeholder="entrez la destination"
             required
           />
@@ -62,7 +62,7 @@
           <input
             type="note"
             id="note"
-            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
             placeholder="1"
             required
           />
@@ -76,7 +76,7 @@
           <input
             type="categorie"
             id="gatigorie"
-            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
             placeholder="Entrez catégorie"
             required
           />
@@ -90,16 +90,20 @@
           <input
             type="image"
             id="image"
-            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
             placeholder="URL"
             required
           />
         </div>
+        <div class="flex gap-6 mt-[10px] ">
+          <button class="bg-red-700 w-16 h-12 rounded-xl text-black"id="annuleer">Annuler</button>
+          <button class="bg-green-600  w-22  h-12 rounded-xl text-black"id="enregistrer">Enregistrer</button>
+        </div>
       </form>
     </div>
     <div>
-      <button>Annuler</button>
-      <button>Enregistrer</button>
+      <button class="bg-white h-5 w-10 rounded-xl text-black"id="annuleer">Annuler</button>
+      <button class="bg-white h-5 w-10 rounded-xl text-black"id="enregistrer">Enregistrer</button>
     </div>
     <header class="flex justify-between mx-5 items-center h-20 md:hidden">
       <i class="fa-solid fa-bars"></i>
