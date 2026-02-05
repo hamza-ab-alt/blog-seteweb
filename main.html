@@ -8,9 +8,95 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>main page</title>
   </head>
   <body>
+    <div
+      class="overlay hide fixed top-0 left-0 right-0 bottom-0 z-40 backdrop-blur-[4px] flex items-center justify-center"
+    >
+      <form
+        action="#"
+        class="border relative border-gray-200 rounded-lg p-16 bg-white"
+      >
+        <button
+          class="close-window absolute top-2 right-2 hover:bg-gray-100 duration-300 p-2 rounded-xl cursor-pointer text-green-400 text-4xl"
+        >
+          &times;
+        </button>
+
+        <div class="mb-4">
+          <label
+            for="email"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="example@company.com"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+      </form>
+    </div>
     <header class="flex justify-between mx-5 items-center h-20 md:hidden">
       <i class="fa-solid fa-bars"></i>
       <img src="logo.png" alt="blog" class="h-16" />
@@ -92,6 +178,13 @@
           <div class="rounded-lg outline-2 px-6 py-1 font-medium">
             <a href="">Mountaines</a>
           </div>
+        </div>
+        <div>
+          <button
+            class="bg-green-500 text-white w-150 h-10 rounded-2xl add-btn"
+          >
+            + Add sevenire
+          </button>
         </div>
         <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65">
           <a href="details.html">
@@ -196,7 +289,7 @@
           <div
             class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300"
           >
-            <a href="index2.html">
+            <a href="profile.html">
               <i class="fa-regular fa-user text-xl cursor-pointer"></i>
             </a>
           </div>
@@ -204,4 +297,5 @@
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
