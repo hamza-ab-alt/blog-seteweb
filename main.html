@@ -8,140 +8,290 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>main page</title>
   </head>
   <body>
+    <div
+      class="overlay hide fixed top-0 left-0 right-0 bottom-0 z-40 backdrop-blur-[4px] flex items-center justify-center"
+    >
+      <form
+        action="#"
+        class="border relative border-gray-200 rounded-2xl p-16 bg-white "
+      >
+        <button
+          class="close-window absolute top-2 right-2 hover:bg-gray-100 duration-300 p-0 rounded-xl cursor-pointer text-green-400 text-4xl" type=""
+        >
+          &times;
+        </button>
+
+        <div class="mb-4">
+          <label
+            for="titre"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >titre</label
+          >
+          <input
+            type="titre"
+            id="titre"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="entrez le titre"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="destination"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Destination</label
+          >
+          <input
+            type="Destination"
+            id="Destination"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="entrez la destination"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="note"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >note</label
+          >
+          <input
+            type="note"
+            id="note"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="1"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="catrgorie"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >Catégorie</label
+          >
+          <input
+            type="categorie"
+            id="gatigorie"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="Entrez catégorie"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="imag"
+            class="block mb-2.5 text-sm font-medium text-heading"
+            >image</label
+          >
+          <input
+            type="image"
+            id="image"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+            placeholder="URL"
+            required
+          />
+        </div>
+        <div class="flex gap-6 mt-[10px] ">
+          <button class="bg-red-700 w-16 h-12 rounded-xl text-black"id="annuler" type="annuler">Annuler</button>
+          <button class="bg-green-600  w-22  h-12 rounded-xl text-black"id="enregistrer" type="enregistrer">Enregistrer</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button class="bg-white h-5 w-10 rounded-xl text-black"id="annuleer">Annuler</button>
+      <button class="bg-white h-5 w-10 rounded-xl text-black"id="enregistrer">Enregistrer</button>
+    </div>
     <header class="flex justify-between mx-5 items-center h-20 md:hidden">
       <i class="fa-solid fa-bars"></i>
       <img src="logo.png" alt="blog" class="h-16" />
       <i class="fa-solid fa-magnifying-glass"></i>
     </header>
-    <main class="flex flex-col gap-3">
-      <h2 class="font-medium mx-4">Blogger Of The Week</h2>
-      <div class="flex gap-20 mx-5">
-        <div>
-          <div
-            class="bg-[url(female-hiker-walking-wooden-bridge.jpg)] bg-cover h-15 w-15 rounded-full"
-          ></div>
-          <p class="items-center">hamza aballagh</p>
+    <main class="flex flex-col gap-3 md:grid md:grid-cols-3">
+      <nav
+        class="hidden md:flex flex-col justify-around bg-white shadow-md py-2 rounded-2xl h-full md:col-span-1 fixed left-0 top-0 w-30 items-center"
+      >
+        <div
+          class="flex items-center justify-center bg-green-600 rounded-xl w-10 text-center"
+        >
+          <i class="fa-solid fa-house text-xl cursor-pointer"></i>
+        </div>
+        <div
+          class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300"
+        >
+          <i
+            class="fa-regular fa-heart text-xl cursor-pointer flex items-center justify-center"
+          ></i>
+        </div>
+        <div
+          class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300"
+        >
+          <i class="fa-solid fa-location-dot text-xl cursor-pointer"></i>
+        </div>
+        <div
+          class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300"
+        >
+          <a href="profile.html">
+            <i class="fa-regular fa-user text-xl cursor-pointer"></i>
+          </a>
+        </div>
+      </nav>
+      <div
+        class="md:col-span-6 flex flex-col gap-4 md:mx-auto md:max-w-3xl md:pl-20"
+      >
+        <h2 class="font-medium mx-4">Blogger Of The Week</h2>
+        <div class="flex gap-20 mx-5">
+          <div>
+            <div
+              class="bg-[url(female-hiker-walking-wooden-bridge.jpg)] bg-cover h-15 w-15 rounded-full"
+            ></div>
+            <p class="items-center">hamza aballagh</p>
+          </div>
+          <div>
+            <div
+              class="bg-[url(horizontal-shot-group-people-hiking-mountains-covered-snow-cloudy-sky.jpg)] bg-cover h-15 w-15 rounded-full"
+            ></div>
+            <p class="items-center">bilal khaid</p>
+          </div>
+          <div>
+            <div
+              class="bg-[url(full-shot-adventurous-man-bivouacking.jpg)] bg-cover h-15 w-15 rounded-full"
+            ></div>
+            <p class="items-center">bader belabrik</p>
+          </div>
+          <div>
+            <div
+              class="bg-[url(full-shot-adventurous-couple-bivouacking.jpg)] bg-cover h-15 w-15 rounded-full text-center"
+            ></div>
+            <p class="items-center">mohamed bnyezza</p>
+          </div>
+        </div>
+        <h1 class="font-medium mx-4">What Do You Want To Read?</h1>
+        <div class="mx-4 flex gap-4">
+          <div class="bg-green-900 rounded-lg px-3 py-1 text-white font-medium">
+            <a href="">All</a>
+          </div>
+          <div class="rounded-lg outline-2 px-6 py-1 font-medium">
+            <a href="">forest</a>
+          </div>
+          <div class="rounded-lg outline-2 px-6 py-1 font-medium">
+            <a href="">Beach</a>
+          </div>
+          <div class="rounded-lg outline-2 px-6 py-1 font-medium">
+            <a href="">River</a>
+          </div>
+          <div class="rounded-lg outline-2 px-6 py-1 font-medium">
+            <a href="">Mountaines</a>
+          </div>
         </div>
         <div>
-          <div
-            class="bg-[url(horizontal-shot-group-people-hiking-mountains-covered-snow-cloudy-sky.jpg)] bg-cover h-15 w-15 rounded-full"
-          ></div>
-          <p class="items-center">bilal khaid</p>
+          <button
+            class="bg-green-500  text-black w-full md:w-150 h-10 rounded-2xl add-btn "
+          >
+            + Create
+          </button>
         </div>
-        <div>
-          <div
-            class="bg-[url(full-shot-adventurous-man-bivouacking.jpg)] bg-cover h-15 w-15 rounded-full"
-          ></div>
-          <p class="items-center">bader belabrik</p>
+        
+        <!-- CARD 1 - زدنا button delete -->
+        <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65 relative">
+          <button class="delete-card absolute top-2 right-2 bg-red-600 hover:bg-white text-white  w-15 h-8 rounded-2xl flex items-center justify-center z-10 shadow-lg transition-all duration-200">
+            Delete
+          </button>
+          <a href="details.html">
+            <img
+              src="horizontal-shot-group-people-hiking-mountains-covered-snow-cloudy-sky.jpg"
+              alt="image"
+              name="image de touriste "
+              class="w-full h-50 object-cover"
+            />
+          </a>
+          <div class="flex justify-between">
+            <div>
+              <h2>Yellow River</h2>
+              <p>by lan jacobson</p>
+            </div>
+            <div class="flex gap-4">
+              <p class="text-gray-600">
+                <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
+                location
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-regular fa-clock text-gray-600"></i> time
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-solid fa-eye text-gray-600"></i> views
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <div
-            class="bg-[url(full-shot-adventurous-couple-bivouacking.jpg)] bg-cover h-15 w-15 rounded-full text-center"
-          ></div>
-          <p class="items-center">mohamed bnyezza</p>
-        </div>
-      </div>
-      <h1 class="font-medium mx-4">What Do You Want To Read?</h1>
-      <div class="mx-4 flex gap-4">
-        <div class="bg-green-900 rounded-lg px-3 py-1 text-white font-medium">
-          <a href="">All</a>
-        </div>
-        <div class="rounded-lg outline-2 px-6 py-1 font-medium">
-          <a href="">forest</a>
-        </div>
-        <div class="rounded-lg outline-2 px-6 py-1 font-medium">
-          <a href="">Beach</a>
-        </div>
-        <div class="rounded-lg outline-2 px-6 py-1 font-medium">
-          <a href="">River</a>
-        </div>
-        <div class="rounded-lg outline-2 px-6 py-1 font-medium">
-          <a href="">Mountaines</a>
-        </div>
-      </div>
-      <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65">
-        <a href="details.html">
+        
+        <!-- CARD 2 - زدنا button delete -->
+        <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65 relative">
+           <button class="delete-card absolute top-2 right-2 bg-red-600 hover:bg-white text-white  w-15 h-8 rounded-2xl flex items-center justify-center z-10 shadow-lg transition-all duration-200">
+            Delete
+          </button>
           <img
-            src="horizontal-shot-group-people-hiking-mountains-covered-snow-cloudy-sky.jpg"
-            alt="image" name="image de touriste "
+            src="female-hiker-walking-wooden-bridge.jpg"
+            alt=""
             class="w-full h-50 object-cover"
           />
-        </a>
-        <div class="flex justify-between">
-          <div>
-            <h2>Yellow River</h2>
-            <p>by lan jacobson</p>
-          </div>
-          <div class="flex gap-4">
-            <p class="text-gray-600">
-              <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
-              location
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-regular fa-clock text-gray-600"></i> time
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-solid fa-eye text-gray-600"></i> views
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65">
-        <img
-          src="female-hiker-walking-wooden-bridge.jpg"
-          alt=""
-          class="w-full h-50 object-cover"
-        />
-        <div class="flex justify-between">
-          <div>
-            <h2>Yellow River</h2>
-            <p>by lan jacobson</p>
-          </div>
-          <div class="flex gap-4">
-            <p class="text-gray-600">
-              <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
-              location
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-regular fa-clock text-gray-600"></i> time
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-solid fa-eye text-gray-600"></i> views
-            </p>
+          <div class="flex justify-between">
+            <div>
+              <h2>Yellow River</h2>
+              <p>by lan jacobson</p>
+            </div>
+            <div class="flex gap-4">
+              <p class="text-gray-600">
+                <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
+                location
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-regular fa-clock text-gray-600"></i> time
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-solid fa-eye text-gray-600"></i> views
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65">
-        <img
-          src="adult-hiking-activity.jpg"
-          alt="image" name="image de touriste"
-          class="w-full h-50 object-cover"
-        />
-        <div class="flex justify-between">
-          <div>
-            <h2>Yellow River</h2>
-            <p>by lan jacobson</p>
-          </div>
-          <div class="flex gap-4">
-            <p class="text-gray-600">
-              <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
-              location
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-regular fa-clock text-gray-600"></i> time
-            </p>
-            <p class="text-gray-600">
-              <i class="fa-solid fa-eye text-gray-600"></i> views
-            </p>
+        
+        <!-- CARD 3 - زدنا button delete -->
+        <div class="bg-white rounded-2xl mx-4 overflow-hidden h-65 relative">
+         <button class="delete-card absolute top-2 right-2 bg-red-600 hover:bg-white text-white  w-15 h-8 rounded-2xl flex items-center justify-center z-10 shadow-lg transition-all duration-200">
+            Delete
+          </button>
+          <img
+            src="adult-hiking-activity.jpg"
+            alt="image"
+            name="image de touriste"
+            class="w-full h-50 object-cover"
+          />
+          <div class="flex justify-between">
+            <div>
+              <h2>Yellow River</h2>
+              <p>by lan jacobson</p>
+            </div>
+            <div class="flex gap-4">
+              <p class="text-gray-600">
+                <i class="fa-solid fa-location-crosshairs text-gray-600"></i>
+                location
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-regular fa-clock text-gray-600"></i> time
+              </p>
+              <p class="text-gray-600">
+                <i class="fa-solid fa-eye text-gray-600"></i> views
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
+        
+        <div></div>
         <nav
-          class="fixed bottom-0 w-full flex justify-around bg-white shadow-md py-2 rounded-2xl h-15"
+          class="fixed bottom-0 w-full flex justify-around bg-white shadow-md py-2 rounded-2xl h-15 md:hidden"
         >
           <div
             class="flex items-center justify-center bg-green-600 rounded-xl w-10 text-center"
@@ -163,7 +313,7 @@
           <div
             class="flex items-center justify-center bg-white rounded-xl w-10 text-center hover:bg-green-300"
           >
-            <a href="index2.html">
+            <a href="profile.html">
               <i class="fa-regular fa-user text-xl cursor-pointer"></i>
             </a>
           </div>
@@ -171,4 +321,5 @@
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
